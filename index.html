@@ -1,0 +1,203 @@
+
+
+<!DOCTYPE html>
+<!-- saved from url=(0045)file:///C:/Users/Dell/.vscode/samayogan2.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Samayojan Case (Draft of the Judgement)</title>
+    <script>
+        var parkingData = {
+//this data helps in auto populating the input fields. This has been obtained by the help of var outputMessage function.
+            "100": {idInput:"100", dropdown1:"", dropdown2:"", custom2:"", dropdown3:"", dropdown4:"अधिवक्ताद्वय ", dropdown5:"", custom5:"श्री उमेश प्रसाद शाह र श्री राम पुकार महतो", year:"२०५२", xoffice:"नेपाल स्वास्थ्य सेवा, आयुर्वेद; वैद्य निरीक्षक, अधिकृत छैठौ, कौडेना आयुर्वेद औषधालय, सर्लाही", priority:"मधेश प्रदेश, सर्लाही जिल्ला अन्तरगतका पालिकामा", neooffice:"विठुना आयुर्वेद, औषधालय, कपिलवस्तु"},
+
+
+            "115": {idInput:"115", dropdown1:"", dropdown2:"", custom2:"", dropdown3:"", dropdown4:"अधिवक्ता", dropdown5:"श्री नारायण प्रसाद साह", custom5:"",   year:"२०६७", xoffice:"नेपाल स्वास्थ्य सेवा, मेडिकल ल्याब टेक्नेसियन , ल्याव असिस्टेन्ट, सहायक पाँचौ, जिल्ला स्वास्थ्य कार्यालय, सुनसरी", priority:"प्रदेश नं. १ अन्तरगतका कार्यालय", neooffice:"गौरीशङ्कर गाउँपालिका, दोलखा"},
+
+            "116": {idInput:"116", dropdown1:"", dropdown2:"", custom2:"", dropdown3:"", dropdown4:"अधिवक्ताहरू ", dropdown4:"श्री ओमप्रसाद चौधरी, श्री सीताराम मण्डल, श्री एरिना कार्की र श्री स्वेता कुमारी", year:"२०५६", xoffice:"नेपाल स्वास्थ्य सेवा, हेल्थ इन्सपेक्सन, सिनियर अ.हे.व.,अधिकृत छैठौं, स्वास्थ्य चौकी सपही, धनुषा", priority:"धनुषा जिल्ला अन्तरगतका कार्यालय", neooffice:"चापाकोट नगरपालिका स्याङ्जा"},
+
+            "118": {idInput:"118", dropdown1:"", dropdown2:"", custom2:"", dropdown3:"", dropdown4:"अधिवक्ताहरू ", dropdown5:"", custom5:"श्री ओमप्रसाद चौधरी, श्री सीताराम मण्डल, श्री एरिना कार्की र श्री स्वेता कुमारी", year:"२०६७", xoffice:"नेपाल स्वास्थ्य सेवा, मेडिकल ल्याब टेक्निसियन, ल्याब एसिस्टेन्ट, सहायक चौथो, कडरबोना, प्राथमिक स्वास्थ्य केन्द्र,सुरूङ्गा, सप्तरी", priority:"प्रदेश नं. २ को विष्णुपुर गाउँपालिकासमेत", neooffice:"नरहरिनाथ गाउँपालिका, कालिकोट"},
+
+            "123": {idInput:"123", dropdown1:"", dropdown2:"", custom2:"", dropdown3:"", dropdown4:"अधिवक्ताहरू ", dropdown5:"", custom5:"श्री ओम प्रसाद चौधरी, श्री सिताराम मण्डल, श्री एरिना कार्की र श्री स्वेता कुमारी", year:"२०६८", xoffice:"नेपाल स्वास्थ्य सेवा, हेल्थ इन्सपेक्सन, अ.हे.व, सहायक पाँचौ, स्वास्थ्य चौकी, कजरारमौल, धनुषा", priority:"सबैला नगरपालिका, धनुषासमेत", neooffice:"तिरहुत गाउँपालिका, सप्तरी"},
+
+        };
+ 
+        function populateFields() {
+            var id = document.getElementById("idInput").value;
+            var dropdown1 = document.getElementById("dropdown1");
+            var dropdown2 = document.getElementById("dropdown2");
+            var custom2Input = document.getElementById("custom2Input");
+            var dropdown3 = document.getElementById("dropdown3");
+            var dropdown4 = document.getElementById("dropdown4");
+            var dropdown5 = document.getElementById("dropdown5");
+            var custom5Input = document.getElementById("custom5Input");
+            var yearInput = document.getElementById("yearInput");
+            var xofficeInput = document.getElementById("xofficeInput");
+            var priorityInput = document.getElementById("priorityInput");
+            var neoofficeInput = document.getElementById("neoofficeInput");
+            // var xyzInput = document.getElementById("xyzInput");
+            // var dropdownpqr = document.getElementById("dropdownpqr");
+            // var custompqrInput = document.getElementById("custompqrInput");
+            
+
+
+            if (id in parkingData) {
+                idInput.value = parkingData[id].idInput;
+                dropdown1.value = parkingData[id].dropdown1;
+                dropdown2.value = parkingData[id].dropdown2;
+                dropdown3.value = parkingData[id].dropdown3;
+                custom2Input.value = parkingData[id].custom2;
+                dropdown4.value = parkingData[id].dropdown4;
+                dropdown5.value = parkingData[id].dropdown5;
+                custom5Input.value = parkingData[id].custom5;
+                yearInput.value = parkingData[id].year;
+                xofficeInput.value = parkingData[id].xoffice;
+                priorityInput.value = parkingData[id].priority;
+                neoofficeInput.value = parkingData[id].neooffice;
+                // xyzInput.value = parkingData[id].xyz;
+                // dropdownpqr.value = parkingData[id].dropdownpqr;
+                // custompqrInput.value = parkingData[id].custompqr;
+                idInput.style.backgroundColor = "yellow";
+
+                        } else {
+                idInput.style.backgroundColor = "red";
+                
+
+            }
+        }
+
+        function displayOutput() {
+            var idInput = document.getElementById("idInput").value;
+            var dropdown1 = document.getElementById("dropdown1").value;
+            var dropdown2 = document.getElementById("dropdown2").value;
+            var custom2Input = document.getElementById("custom2Input").value;
+            var dropdown3 = document.getElementById("dropdown3").value;
+            var dropdown4 = document.getElementById("dropdown4").value;
+            var dropdown5 = document.getElementById("dropdown5").value;
+            var custom5Input = document.getElementById("custom5Input").value;
+            var yearInput = document.getElementById("yearInput").value;
+            var xofficeInput = document.getElementById("xofficeInput").value;
+            var priorityInput = document.getElementById("priorityInput").value;
+            var neoofficeInput = document.getElementById("neoofficeInput").value;
+            // var xyzInput = document.getElementById("xyzInput").value;
+            // var dropdownpqr = document.getElementById("dropdownpqr").value;
+            // var custompqrInput = document.getElementById("custompqrInput").value;
+            var outputMessage = "<br><br>" + "&quot;" + idInput + "&quot;" + ": " + "{" + "idInput:" + "&quot;" + idInput + "&quot;" + "," + " dropdown1:" + "&quot;" + dropdown1 + "&quot;" + "," + " dropdown2:" + "&quot;" + dropdown2 + "&quot;" + "," + " custom2:" + "&quot;" + custom2Input + "&quot;" + "," + " dropdown3:" + "&quot;" + dropdown3 + "&quot;" + ","+ " dropdown4:" + "&quot;" + dropdown4 + "&quot;" + ","+ " dropdown5:" + "&quot;" + dropdown5 + "&quot;"  + "," +" custom5:" + "&quot;" + custom5Input + "&quot;" + "," +" year:" + "&quot;" + yearInput + "&quot;"  + "," +  " xoffice:" + "&quot;" + xofficeInput + "&quot;" + ","  +  " priority:" + "&quot;" + priorityInput + "&quot;" + ","+ " neooffice:" + "&quot;" + neoofficeInput + "&quot;" + "}" +
+
+           "<br><br>&lt;p&gt;" + idInput + " नियम बमोजिम साप्ताहिक तथा दैनिक पेशी सूचिमा चढी पेश हुन आएको प्रस्तुत निवेदनमा निवेदकका तर्फबाट विद्वान  " + dropdown1 + dropdown2 + custom2Input+ dropdown3+ dropdown4+ custom5Input+"ले निवेदक " + yearInput + " सालमा स्वास्थ्य सेवामा प्रवेश गरी समायोजन हुनु अघि " + xofficeInput + "मा कार्यरत रहेको र कर्मचारी समायोजन फारम भर्दा " + priorityInput + " प्राथमिकतामा राखी समायोजन हुन माग गरी निवेदन दिएकोमा " + neoofficeInput + "मा समायोजन भएको छ; उक्त कार्य नेपालको संविधान, समायोजन सम्बन्धी प्रचलित कानूनसमेतको विपरीत रहेकोले निवेदकलाई प्रतिकूल असर पर्ने गरी गरिएको समायोजन सम्बन्धी निर्णय, पत्राचार लगायतका सम्पूर्ण काम कारवाहीहरू उत्प्रेषणको आदेशद्वारा बदर गरी निवेदकको माग बमोजिमको कार्यालयमा समायोजन गर्नु भनी विपक्षीहरूका नाममा परमादेशको आदेश जारी गरिनुपर्छ भनी बहस गर्नुभयो।&lt;/p&gt; "+
+
+                "<br><br> नियम बमोजिम साप्ताहिक तथा दैनिक पेशी सूचिमा चढी पेश हुन आएको प्रस्तुत निवेदनमा निवेदकका तर्फबाट विद्वान  " + dropdown1 + dropdown2 + custom2Input+ dropdown3+ dropdown4+ custom5Input+"ले निवेदक " + yearInput + " सालमा स्वास्थ्य सेवामा प्रवेश गरी समायोजन हुनु अघि " + xofficeInput + "मा कार्यरत रहेको र कर्मचारी समायोजन फारम भर्दा " + priorityInput + " प्राथमिकतामा राखी समायोजन हुन माग गरी निवेदन दिएकोमा " + neoofficeInput + "मा समायोजन भएको छ; उक्त कार्य नेपालको संविधान, समायोजन सम्बन्धी प्रचलित कानूनसमेतको विपरीत रहेकोले निवेदकलाई प्रतिकूल असर पर्ने गरी गरिएको समायोजन सम्बन्धी निर्णय, पत्राचार लगायतका सम्पूर्ण काम कारवाहीहरू उत्प्रेषणको आदेशद्वारा बदर गरी निवेदकको माग बमोजिमको कार्यालयमा समायोजन गर्नु भनी विपक्षीहरूका नाममा परमादेशको आदेश जारी गरिनुपर्छ भनी बहस गर्नुभयो।"
+
+            var outputDiv = document.getElementById("output");
+            outputDiv.innerHTML = outputMessage;
+        }
+    </script>
+</head>
+
+<body>
+    <h3><center>समायोजन मुद्दाका  फैसलाको मस्यौदा तयारी <br> <u>महाभियानमा</u><br> यहाँलाई हार्दिक स्वागत छ</center></h3>
+
+    <label for="descriptionBox">Parking1:</label>
+    <textarea id="descriptionBox" placeholder="Park your text here" style="background-color: lightgrey" value="abc">copy me</textarea><br><br>
+
+    <label for="descriptionBox">Parking2:</label>
+    <textarea id="descriptionBox" placeholder="Park your text here" style="background-color: lightgrey" value="abc"></textarea><br><br>
+    
+    <label for="idInput"> <b>1. Case No:</b> </label>
+    <input type="text" id="idInput" name="idInput" onkeyup="populateFields()" style="background-color: yellow;"><br><br>
+
+    <label for="dropdown1"><b>2. Title of Senior Advocate:</b></label>
+    <select id="dropdown1">
+        <option value=""></option>
+        <option value="वरिष्ठ अधिवक्ता">वरिष्ठ अधिवक्ता </option>
+        <option value="वरिष्ठ अधिवक्ताद्वय">वरिष्ठ अधिवक्ताद्वय </option>
+        <option value="वरिष्ठ अधिवक्तात्रय">वरिष्ठ अधिवक्तात्रय </option>
+        <option value="वरिष्ठ अधिवक्ताहरू">वरिष्ठ अधिवक्ताहरू </option>
+    </select><br>
+
+    <label for="dropdown2"><b>3. Name of Senior Advocate:</b></label>
+    <select id="dropdown2">
+        <option value=""></option>
+        <option value="श्री पूर्णमान शाक्य"> श्री पूर्णमान शाक्य</option>
+        <option value=" श्री शम्भु थापा"> श्री शम्भु थापा</option>
+                <option value="">Custom</option>
+                                </select>
+                                <textarea id="custom2Input" name="custom2Input" placeholder="??" style="width: 40%"></textarea>
+                 <br>
+
+          <label for="dropdown3"><b>4. Conjunction</b></label>
+          <select id="dropdown3">
+              <option value=""></option>
+              <option value=" र  ">र</option>
+              <option value=" तथा ">तथा</option>
+              <option value=" एवं ">एवं</option>
+          </select><br>
+
+    <label for="dropdown4"><b>5. Title for Advocates:</b></label>
+    <select id="dropdown4">
+        <option value=""></option>
+        <option value="अधिवक्ता ">अधिवक्ता</option>
+        <option value="अधिवक्ताद्वय ">अधिवक्ताद्वय </option>
+        <option value="अधिवक्तात्रय ">अधिवक्तात्रय </option>
+        <option value="अधिवक्ताहरू ">अधिवक्ताहरू </option>
+    </select><br>
+
+    <label for="dropdown5"><b>6. Name of Advocates:</b></label>
+    <select id="dropdown5">
+        <option value="">Select an option</option>
+        <option value="अधिवक्ता श्री नारायण प्रसाद साह"> श्री सबिन पोख्रेल</option>
+        <option value="अधिवक्ता श्री राम पुकार महतो">श्री राम पुकार महतो</option>
+        <option value="अधिवक्ता श्री दिपनारायण चौधरी"> श्री दिपनारायण चौधरी</option>
+        <option value="अधिवक्ता श्री सिताराम मण्डल"> श्री सिताराम मण्डल</option>
+        <option value="अधिवक्ता श्री नारायण प्रसाद साह"> श्री नारायण प्रसाद साह</option>
+        <option value="अधिवक्ता श्री नागेन्द्र यादव"> श्री नागेन्द्र यादव</option>
+        <option value="अधिवक्ता श्री रामचन्द्र पौडेल"> श्री रामचन्द्र पौडेल</option>
+        <option value="">Custom</option>
+        
+        </select><textarea id="custom5Input" name="custom5Input" style="width: 40%"></textarea> <br>
+                  
+
+    <label for="yearInput"><b>7. सुरू नियुक्ति (year):</b> </label>
+    <input type="text" id="yearInput" name="yearInput"><br>
+
+    <label for="xofficeInput"><b> 8. xoffice:</b></label>
+    <textarea id="xofficeInput" name="xofficeInput" style="width: 40%"></textarea><br>
+
+    <label for="priorityInput"><b>9. priority:</b> </label>
+    <textarea id="priorityInput" name="priorityInput" style="width: 40%"></textarea><br>
+
+    <label for="neoofficeInput"><b>10. neo-office:</b> </label>
+<textarea id="neoofficeInput" name="neoofficeInput" style="width: 40%"></textarea><br><br>
+
+    <!-- <label for="xyzInput"><b>10. xyz:</b> </label>
+<textarea id="xyzInput" name="xyzInput" style="width: 40%"></textarea><br> -->
+
+<!-- <label for="dropdownpqr"><b>6. dropdownpqr</b></label>
+<select id="dropdownpqr">
+    <option value=""></option>
+    <option value="pqr">pqr</option>
+    <option value="">Custom</option>
+    </select><textarea id="custompqrInput" name="custompqrInput" style="width: 40%"></textarea> <br> -->
+
+<button onclick="displayOutput()">Display Output</button>
+<button onclick="downloadOutput()">Download Output</button>
+
+<script>
+  // script for the functional download button
+    function downloadOutput() {
+        var idInputValue = document.getElementById("idInput").value;
+        var outputText = document.getElementById("output").innerText;
+        var blob = new Blob([outputText], { type: "text/plain" });
+        var url = URL.createObjectURL(blob);
+        var link = document.createElement("a");
+        link.href = url;
+        link.download = idInputValue + ".txt";
+        link.click();
+    }
+</script>
+
+
+<div id="output" style="font-size: small"></div><br>
+ 
+<!-- Output Content Recordings -->
+
+</body>
+   </html>
