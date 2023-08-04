@@ -124,12 +124,11 @@
             var dropdown7 = document.getElementById("dropdown7").value;
             var custom7Input = document.getElementById("custom7Input").value;
             var ratioInput = document.getElementById("ratioInput").value.replace(/&#x003C;br&#x003E;/g, "").replace(/br/g, "").replace (/>/g, "");
-            var secondParagraph = "<br><br>" + tapasilInput.replace(/&#x003C;br&#x003E;/g, "<br>") 
+            var tapasilInput = document.getElementById("tapasilInput").value.replace(/&#x003C;br&#x003E;/g, "<br>");
 
 
             var outputMessage = "<br><br>" + "&quot;" + idInput + "&quot;" + ": " + "{" + "idInput:" + "&quot;" + idInput + "&quot;" + "," + " dropdown1:" + "&quot;" + dropdown1 + "&quot;" + "," + " dropdown2:" + "&quot;" + dropdown2 + "&quot;" + "," + " custom2:" + "&quot;" + custom2Input + "&quot;" + "," + " dropdown3:" + "&quot;" + dropdown3 + "&quot;" + ","+ " dropdown4:" + "&quot;" + dropdown4 + "&quot;" + ","+ " dropdown5:" + "&quot;" + dropdown5 + "&quot;"  + "," +" custom5:" + "&quot;" + custom5Input + "&quot;" + "," +" year:" + "&quot;" + yearInput + "&quot;"  + "," +  " xoffice:" + "&quot;" + xofficeInput + "&quot;" + ","  +  " priority:" + "&quot;" + priorityInput + "&quot;" + ","+ " neooffice:" + "&quot;" + neoofficeInput + "&quot;"  + ","+ " dropdown6:" + "&quot;"+ dropdown6 +  "&quot;"  + ","+ " custom6:"+ "&quot;"+ custom6Input + "&quot;" + ","+ " dropdown7:" + "&quot;"+ dropdown7 +  "&quot;"  + ","+ " custom7:"+ "&quot;"+ custom7Input + "&quot;" + ","+ " ratio:" + "&quot;" + ratioInput + "&quot;" + "," + " tapasil:" + "&quot;" + tapasilInput + "&quot;"  + "}" + "," +
 
-            
             "<br><br> नियम बमोजिम पेश हुन आएको प्रस्तुत निवेदनमा निवेदकका तर्फबाट विद्वान " + dropdown1 + dropdown2 + custom2Input + dropdown3 + dropdown4 + dropdown5 + custom5Input+"ले निवेदक " + yearInput + " सालमा स्वास्थ्य सेवामा प्रवेश गरी समायोजन हुनु अघि " + xofficeInput + "मा कार्यरत रहेको र कर्मचारी समायोजन फारम भर्दा " + priorityInput + " प्राथमिकतामा राखी समायोजन हुन माग गरी निवेदन दिएकोमा " + neoofficeInput + "मा समायोजन भएको छ; उक्त कार्य नेपालको संविधान, समायोजन सम्बन्धी प्रचलित कानूनसमेतको विपरीत रहेकोले निवेदकलाई प्रतिकूल असर पर्ने गरी गरिएको समायोजन सम्बन्धी निर्णय, पत्राचार लगायतका सम्पूर्ण काम कारवाहीहरू उत्प्रेषणको आदेशद्वारा बदर गरी निवेदकको माग बमोजिमको कार्यालयमा समायोजन गर्नु भनी विपक्षीहरूका नाममा परमादेशको आदेश जारी गरिनुपर्छ भनी बहस गर्नुभयो।" + "<br><br>"  + dropdown6 + custom6Input +"<br><br>"  + dropdown7 + custom7Input + "<br><br> <center><b>ठहर खण्ड </b></center>" + ratioInput + "<br><br><center><b>तपसिल </b><center>" + tapasilInput
 
             var outputDiv = document.getElementById("output");
